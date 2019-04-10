@@ -1,0 +1,7 @@
+POST  http://localhost/comp3161/api/get_laptops.php HTTP/1.1
+
+content-type: application/json
+
+{
+    "brand": "Acer"
+}

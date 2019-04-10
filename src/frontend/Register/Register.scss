@@ -1,0 +1,11 @@
+@import './../Login/Login.scss';
+
+.success{
+    border: 2px solid $success !important;
+}
+.error{
+    border: 2px solid $error !important;
+}
+span{
+    color: $error;
+}

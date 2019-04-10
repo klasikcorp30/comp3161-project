@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300i");
+input {
+  background: #f8f8f8 !important;
+}
+
+button {
+  background: #8ec63f !important;
+  color: #fffefb !important;
+  padding: 10px 40px 10px 40px !important;
+}
+
+button:hover {
+  background: #1f2c0d !important;
+  color: #d7dadd !important;
+}
+
+legend {
+  font-family: 'Raleway', sans-serif;
+}
+
+nav button {
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+}
+
+nav button:hover {
+  background: none !important;
+}
+
+.nav-bg {
+  background: -webkit-gradient(linear, left top, right top, from(#24c4e6), to(#70cbcc)) !important;
+  background: linear-gradient(to right, #24c4e6, #70cbcc) !important;
+}
+
+ul li a {
+  color: #fffefb !important;
+}
+
+a {
+  color: #fffefb !important;
+}
+/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300i');
+$background: #ffffff;
+$button: #8ec63f;
+$input: #f8f8f8;
+$text: #6b747d;
+$button-color: #fffefb;
+$error: #ff0000;
+$success: #78df78;
+
+
+input{
+    background: $input !important;
+}
+ button{
+     background: $button !important;
+     color: $button-color !important;
+     padding: 10px 40px 10px 40px !important; 
+     
+    &:hover{
+        background: darken($button, 40%) !important;
+        color: lighten($text,40%) !important;
+    };
+    
+ }
+ legend{
+     font-family: 'Raleway', sans-serif;
+ }
+ 

@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300i");
+input {
+  background: #f8f8f8 !important;
+}
+
+button {
+  background: #8ec63f !important;
+  color: #fffefb !important;
+  padding: 10px 40px 10px 40px !important;
+}
+
+button:hover {
+  background: #1f2c0d !important;
+  color: #d7dadd !important;
+}
+
+legend {
+  font-family: 'Raleway', sans-serif;
+}
+
+.laptops-container {
+  margin-top: 200px !important;
+}
+/*# sourceMappingURL=Laptops.css.map */

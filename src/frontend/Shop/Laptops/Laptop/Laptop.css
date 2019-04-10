@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300i");
+input {
+  background: #f8f8f8 !important;
+}
+
+button {
+  background: #8ec63f !important;
+  color: #fffefb !important;
+  padding: 10px 40px 10px 40px !important;
+}
+
+button:hover {
+  background: #1f2c0d !important;
+  color: #d7dadd !important;
+}
+
+legend {
+  font-family: 'Raleway', sans-serif;
+}
+
+.laptops-container {
+  margin-top: 200px !important;
+}
+
+div.card-body h4 {
+  color: !important;
+}
+
+div.card-body a {
+  background: #0163d2 !important;
+  border-radius: 0 !important;
+}
+
+div.card-body h4 {
+  color: !important;
+}
+
+div.card-body a {
+  background: #0163d2 !important;
+  border-radius: 0 !important;
+}
+/*# sourceMappingURL=Laptop.css.map */

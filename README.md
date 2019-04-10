@@ -1,0 +1,1 @@
+React starter pack with bootstrap installed

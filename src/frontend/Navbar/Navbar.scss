@@ -1,0 +1,34 @@
+@import '../../Login/Login.scss';
+
+nav{
+    padding: auto !important;
+    button{
+        padding: 0 !important;
+        background: none !important;
+        border: none !important;
+    &:hover{
+        background: none !important;
+        }
+    }
+}
+
+.nav-bg{
+    background: linear-gradient(to right,#24c4e6, #70cbcc) !important;
+    
+}
+ul{
+    
+    li{
+        a{
+            color: $button-color !important; 
+            &:hover{
+                color: darken($button-color, 40%) !important;
+            } 
+        }
+}
+
+}
+a{
+    color: $button-color !important;   
+}
+

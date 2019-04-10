@@ -1,0 +1,1 @@
+CREATE VIEW CardDetailsView AS SELECT c_number FROM cards;

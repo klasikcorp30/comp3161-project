@@ -1,0 +1,12 @@
+@import '../Login/Login.scss';
+
+input.input-button{
+    background: $button !important;
+    border-top-left-radius: none;
+    border-bottom-left-radius: none;
+    margin-left: -4px;
+    
+    cursor: pointer;
+    color: $button-color !important;
+
+}
