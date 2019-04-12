@@ -40,7 +40,7 @@ export default class Laptops extends Component {
   render() {
     return (
       <div className='container laptops-container'>
-      <legend className='display-4'>Laptops</legend>
+      <legend className='display-4 text-center'>Laptops</legend>
       <hr />
         <div className='row'>
          {this.state.laptops.map((laptop) => {

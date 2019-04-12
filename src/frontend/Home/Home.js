@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Login from '../Login/Login';
-import Register from '../Register/Register';
+import logo from '../../logo.png';
 import axios from 'axios';
 export default class Home extends Component {
   
@@ -16,14 +16,13 @@ export default class Home extends Component {
     return (
       <div className='container'>
         <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 mt-5 shadow p-3 mb-5 bg-white rounded">
                 <Login />
-                <button onClick={this.getDataHandler} className="btn btn-primary">Test</button>
             </div>
             <div className="col-lg-6">
-                <Register />
+                <img src={logo} alt="logo" className='w-100 h-100'/>
             </div>  
-        </div> 
+          </div> 
       </div>
     )
   }

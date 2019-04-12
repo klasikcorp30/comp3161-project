@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,KAAK,EAAE,kBAAkB;EACzB,WAAW,EAAC,cAAc;CAC7B",
+    "sources": [
+        "Laptop_Details.scss"
+    ],
+    "names": [],
+    "file": "Laptop_Details.css"
+}
