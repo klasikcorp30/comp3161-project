@@ -1,28 +1,31 @@
-create table purchase(
-    customer_id INT(100) NOT NULL,
-    prod_id INT(100) NOT NULL,
-    purchase_date DATE NOT NULL,
-    purchase_time TIMESTAMP NOT NULL,
-    
-    PRIMARY KEY (customer_id,prod_id)
-    
-    FOREIGN KEY (customer_id) REFERENCES customer(id) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (prod_id) REFERENCES laptop_details(prod_id) ON DELETE CASCADE ON UPDATE CASCADE
+ DROP TABLE IF EXISTS purchase;
+ create table purchase(
+     id INT(100) NOT NULL,
+     prod_id INT(100) NOT NULL,
+     quantity INT(11) NOT NULL,
+     quantity_price DECIMAL (8,2) NOT NULL,
+     transaction_number INT(11) NOT NULL,
 
-);
+     PRIMARY KEY (id,prod_id),
+     FOREIGN KEY (id) REFERENCES customer(id) ON DELETE CASCADE ON UPDATE CASCADE,
+     FOREIGN KEY (prod_id) REFERENCES laptop_details(prod_id) ON DELETE CASCADE ON UPDATE CASCADE
+     );
 
-create table uses (
-    customer_id INT(100) NOT NULL,
+DROP TABLE IF EXISTS uses;
+CREATE TABLE uses (
     c_number INT(16) NOT NULL,
-    
-    PRIMARY KEY(customer_id, c_number),
-    
-    FOREIGN KEY (customer_id) REFERENCES customer(id) ON DELETE CASCADE ON UPDATE CASCADE;,
-    FOREIGN KEY(c_number) REFERENCES credt_card(c_number) ON DELETE CASCADE ON UPDATE CASCADE
+    cvv INT(3) NOT NULL,
+    id INT(100) NOT NULL,
+    PRIMARY KEY(c_number, cvv, id),
+
+    FOREIGN KEY (c_number, cvv) REFERENCES credit_card(c_number,cvv) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (id) REFERENCES customer(id) ON DELETE CASCADE ON UPDATE CASCADE
+
 
 );
 
-create table supplies(
+DROP TABLE IF EXISTS supplies;
+CREATE TABLE supplies(
     m_id INT(11) NOT NULL,
     prod_id INT(100) NOT NULL,
     supply_date DATE NOT NULL,
@@ -32,22 +35,23 @@ create table supplies(
     FOREIGN KEY (prod_id) REFERENCES laptop_details(prod_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-create table requires(
-    customer_id INT(100) NOT NULL,
+DROP TABLE IF EXISTS requires;
+CREATE TABLE requires(
+    id INT(100) NOT NULL,
     prod_id INT(100) NOT NULL,
     review_id INT(100) NOT NULL,
     
-    PRIMARY KEY(customer_id, prod_id, review_id),
-    FOREIGN KEY (customer_id) REFERENCES customer(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    PRIMARY KEY(id, prod_id, review_id),
+    FOREIGN KEY (id) REFERENCES customer(id) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (prod_id) REFERENCES laptop_details(prod_id) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (review_id) REFERENCES review(review_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
-
-create table warehoses(
+DROP TABLE IF EXISTS warehouses;
+CREATE TABLE warehouses(
     prod_id INT(100) NOT NULL,
     w_id INT(11) NOT NULL,
     quantity INT(11) NOT NULL,
-    PRIMARY KEY(customer_id, w_id),
+    PRIMARY KEY(prod_id, w_id),
     
     FOREIGN KEY (prod_id) REFERENCES laptop_details(prod_id) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (w_id) REFERENCES warehouse(w_id) ON DELETE CASCADE ON UPDATE CASCADE

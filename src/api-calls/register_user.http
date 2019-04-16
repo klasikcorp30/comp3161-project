@@ -1,0 +1,10 @@
+POST http://localhost/comp3161/api/register_user.php
+POST http
+Content-Type: application/json
+
+{
+  "id": 999,
+  "value": "content"
+}
+
+###

@@ -1,0 +1,152 @@
+POST https://httpbin.org/post
+Content-Type: application/json
+
+{
+  "id": 999,
+  "value": "content"
+}
+
+<> 2019-04-15T071052.200.json
+
+###
+
+POST http://localhost/comp3161/api/register_user.php
+
+{
+  "phone": "1234568",
+
+}
+
+<> 2019-04-15T071012.200.html
+
+###
+
+POST http://localhost/comp3161/api/register_user.php
+
+{
+  "phone": 12345678,
+
+}
+
+<> 2019-04-15T070937.200.html
+
+###
+
+POST http://localhost/comp3161/api/register_user.php
+
+{
+  "phone": 12345678,
+
+}
+
+<> 2019-04-15T070808.200.html
+
+###
+
+POST http://localhost/comp3161/api/register_user.php
+Content-Type: application/json
+
+{
+  "phone": 12345678,
+
+}
+
+<> 2019-04-15T070749.200.html
+
+###
+
+POST http://localhost/comp3161/api/register_user.php
+Content-Type: application/json
+
+{
+  "firstname": "Raniel",
+  "lastname": "Brown" ,
+  "username": "klasikcorp30",
+  "email": "kcorp@gmail.com",
+  "phone": "8765432122" ,
+  "password": "1234567"
+
+}
+
+<> 2019-04-15T070520.200.html
+
+###
+
+POST http://localhost/comp3161/api/register_user.php
+Content-Type: application/json
+
+{
+  "firstname": "Raniel",
+  "lastname": "Brown" ,
+  "username": "klasikcorp30",
+  "email": "kcorp@gmail.com",
+  "phone": "8765432122" ,
+  "password": "1234567"
+
+}
+
+<> 2019-04-15T070428.200.html
+
+###
+
+POST http://localhost/comp3161/api/register_user.php
+Content-Type: application/json
+
+{
+  "firstname": "Raniel",
+  "lastname": "Brown" ,
+  "username": "klasikcorp30",
+  "email": "kcorp@gmail.com",
+  "phone": "8765432122" ,
+  "password": "1234567"
+
+}
+
+<> 2019-04-15T045215.200.html
+
+###
+
+POST http://localhost/comp3161/api/get_laptops.php
+content-type: application/json
+
+{
+    "brand": "Acer"
+}
+
+<> 2019-04-14T095903.404.html
+
+###
+
+POST http://../backend/get_laptops.php
+content-type: application/json
+
+{
+    "brand": "Acer"
+}
+
+###
+
+POST http://localhost/comp3161/api/get_laptops.php
+
+{"brand": "Acer"}
+
+<> 2019-04-12T075823.200.html
+
+###
+
+POST http://localhost/comp3161/api/get_laptops.php
+
+content-type: application/json
+
+{"brand": "Acer"}
+
+<> 2019-04-12T075615.200.html
+
+###
+
+POST http://localhost/comp3161/api/get_laptops.php
+
+<> 2019-04-12T075224.200.html
+
+###
+

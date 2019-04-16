@@ -18,11 +18,11 @@ fs.appendFile(
         price DECIMAL(8,2) NOT NULL         
         );
     ${laptops.map((item) => {
-            var price;
-            var randPrice =[5000,6000,45999,23002,3349,5560,6500]
-            var randOS = ['Windows', 'Linux']
-            var os;
-            item.OpSys === ''? os = randOS[Math.floor(Math.random()*2 + 0)]: os = item.OpSys;
+            let price;
+            let randPrice =[5000,6000,45999,23002,3349,5560,6500];
+            let randOS = ['Windows', 'Linux'];
+            let os;
+            item.OpSys === ''? os = randOS[Math.floor(Math.random()*2)]: os = item.OpSys;
             isNaN(parseInt(item.Price))? price = randPrice[Math.floor(Math.random()*6) + 1]: price = parseInt(item.Price)
             return `INSERT INTO laptop_details(prod_brand,prod_model,prod_processor,RAM,storage,OS,price) VALUES('${item.Brand}', '${item.Model}', '${item.Processor}', '${item.Ram}', '${item.Storage}', '${os}', ${price});\n`
         })}`,err => console.log(err));
